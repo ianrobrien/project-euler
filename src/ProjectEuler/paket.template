@@ -1,0 +1,25 @@
+type project
+title
+    ProjectEuler
+owners
+    Ian R. O'Brien
+authors 
+    Ian R. O'Brien
+projectUrl
+    https://github.com/ianrobrien/project-euler/ianrobrien/project-euler
+iconUrl
+    https://raw.githubusercontent.com/ianrobrien/project-euler/master/docs/files/img/logo.png
+licenseUrl
+    https://github.com/ianrobrien/project-euler/ianrobrien/project-euler/blob/master/LICENSE.txt
+requireLicenseAcceptance
+    false
+copyright
+    Copyright 2015
+tags
+    fsharp
+summary
+    A Project Euler solution in F#
+description
+    A Project Euler solution in F#
+
+
