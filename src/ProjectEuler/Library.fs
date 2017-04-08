@@ -1,12 +1,5 @@
 namespace ProjectEuler
 
-/// Documentation for my library
-///
-/// ## Example
-///
-///     let h = Library.hello 1
-///     printfn "%d" h
-///
 module Library = 
 
   module Math =

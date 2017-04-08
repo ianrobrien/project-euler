@@ -7,6 +7,6 @@ module Problem_003_Test =
   
   [<Test>]
   let ``Solve Problem 003`` ()=
-    let result = ProjectEuler.Problem_003.Solve 13195
+    let result = ProjectEuler.Problem_003.Solve 600851475143L
     printfn "%i" result
-    Assert.AreEqual(29,result)
+    Assert.AreEqual(6857,result)
