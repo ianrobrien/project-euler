@@ -8,14 +8,12 @@ namespace ProjectEuler
 ///     printfn "%d" h
 ///
 module Library = 
-  
-  /// Returns 42
-  ///
-  /// ## Parameters
-  ///  - `num` - whatever
-  let hello num = 42
 
   module Math =
+
+    let Abs x =
+      if x < 0 then x * -1
+      else x
 
     let IsEven x =
       x % 2 = 0
@@ -33,3 +31,11 @@ module Library =
       match n with
       | 0 -> 1
       | _ -> n * Factorial(n - 1)
+
+    let rec IsPrime x =
+      let root = (int)(sqrt ((float)x))
+      let rec isPrimeRec n =
+        if n > root then true
+        else if ((x % n) = 0) then false
+        else isPrimeRec (n + 1)
+      isPrimeRec 2
