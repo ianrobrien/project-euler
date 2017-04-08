@@ -1,41 +1,29 @@
-[![Issue Stats](http://issuestats.com/github/fsprojects/ProjectScaffold/badge/issue)](http://issuestats.com/github/fsprojects/ProjectScaffold)
-[![Issue Stats](http://issuestats.com/github/fsprojects/ProjectScaffold/badge/pr)](http://issuestats.com/github/fsprojects/ProjectScaffold)
+[![Issue Stats](http://issuestats.com/github/ianrobrien/project-euler/badge/issue)](http://issuestats.com/github/ianrobrien/project-euler)
+[![Issue Stats](http://issuestats.com/github/ianrobrien/project-euler/badge/pr)](http://issuestats.com/github/ianrobrien/project-euler)
 
-# ProjectScaffold
+# project-euler
 
-This project can be used to scaffold a prototypical .NET solution including file system layout and tooling. This includes a build process that: 
-
-* updates all AssemblyInfo files
-* compiles the application and runs all test projects
-* generates [SourceLinks](https://github.com/ctaggart/SourceLink)
-* generates API docs based on XML document tags
-* generates [documentation based on Markdown files](http://fsprojects.github.io/ProjectScaffold/writing-docs.html)
-* generates [NuGet](http://www.nuget.org) packages
-* and allows a simple [one step release process](http://fsprojects.github.io/ProjectScaffold/release-process.html).
+This project is a collection of solutions for [Project Euler](https://projecteuler.net/) implemented in [F#](http://fsharp.org/). 
 
 In order to start the scaffolding process run 
 
     > build.cmd // on windows    
     $ ./build.sh  // on unix
     
-Read the [Getting started tutorial](http://fsprojects.github.io/ProjectScaffold/index.html#Getting-started) to learn more.
+Read the [Getting started tutorial](http://ianrobrien.github.io/project-euler/index.html#Getting-started) to learn more.
 
-Documentation: http://fsprojects.github.io/ProjectScaffold
+Documentation: http://ianrobrien.github.io/project-euler
 
 ## Requirements
 
-ProjectScaffold requires a local git installation. You can download git from [Git Downloads](https://git-scm.com/downloads).
+You will need to set up your computer in accordance with [Use F# on Linux](http://fsharp.org/use/linux/) or your preferred operating system.
 
 ## Build Status
 
-Mono | .NET
----- | ----
-[![Mono CI Build Status](https://travis-ci.org/ianrobrien/project-euler.svg?branch=master)](https://travis-ci.org/fsprojects/ProjectScaffold) | [![.NET Build Status](https://img.shields.io/appveyor/ci/fsgit/ProjectScaffold/master.svg)](https://ci.appveyor.com/project/fsgit/projectscaffold)
+Mono 
+---- 
+[![Mono CI Build Status](https://travis-ci.org/ianrobrien/project-euler.svg?branch=master)](https://travis-ci.org/ianrobrien/project-euler)
 
-## Maintainer(s)
+## Disclaimer
 
-- [@forki](https://github.com/forki)
-- [@pblasucci](https://github.com/pblasucci)
-- [@sergey-tihon](https://github.com/sergey-tihon)
-
-The default maintainer account for projects under "fsprojects" is [@fsprojectsgit](https://github.com/fsprojectsgit) - F# Community Project Incubation Space (repo management)
+I created this repo in order to learn functional programming with F#. Please do not use this repo for cheating purposes. I offer no guarantee that my solutions are optimal.
