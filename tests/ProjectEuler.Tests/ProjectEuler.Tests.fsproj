@@ -67,6 +67,7 @@
     <Compile Include="Problem_001_Test.fs" />
     <Compile Include="Problem_002_Test.fs" />
     <Compile Include="Problem_003_Test.fs" />
+    <Compile Include="Problem_004_Test.fs" />
     <None Include="paket.references" />
     <Content Include="App.config" />
   </ItemGroup>

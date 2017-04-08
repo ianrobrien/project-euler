@@ -32,3 +32,5 @@ module Library =
         else if ((x % n) = 0) then false
         else isPrimeRec (n + 1)
       isPrimeRec 2
+
+    let IsPalindrome x = true
