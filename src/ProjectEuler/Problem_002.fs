@@ -13,14 +13,13 @@ module Problem_002 =
     // fetch fibs till 4000000
     // filter evens    
 
-    let FibonacciSequence filterPredicate x =
-      let rec getMaxFibonacciElement n x =
-        if Math.Fibonacci n < x then getMaxFibonacciElement (n + 1) x
-        else n
-      [0..getMaxFibonacciElement 0 x]
-      |>List.map(Math.Fibonacci)
-      |>List.filter(filterPredicate)
-      |>List.sum
+    let FibonacciSequence stopCondition acceptPredicate =      
+      let rec sequenceGenerator n sum =
+        let fib = Math.Fibonacci n
+        if fib > stopCondition then sum
+        else if acceptPredicate fib then sum + (sequenceGenerator(n+1) sum)
+        else sum + fib + (sequenceGenerator(n+1) sum)
+      sequenceGenerator 0 0
     
-    let Solve stopCondition filterPredicate = FibonacciSequence filterPredicate stopCondition
+    let Solve stopCondition acceptPredicate = FibonacciSequence stopCondition acceptPredicate
 

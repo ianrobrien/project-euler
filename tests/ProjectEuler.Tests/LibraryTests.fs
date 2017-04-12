@@ -28,3 +28,15 @@ module LibraryTests =
     let result = Library.Math.IsPrime 93830
     printfn "%b" result
     Assert.AreEqual(false,result)
+
+  [<Test>]
+  let ``IsPalindrome correct for palindromes`` ()=
+    let result = Library.Math.IsPalindrome 6432346
+    printfn "%b" result
+    Assert.AreEqual(true,result)
+
+  [<Test>]
+  let ``IsPalindrome correct for non-palindromes`` ()=
+    let result = Library.Math.IsPalindrome 284543634
+    printfn "%b" result
+    Assert.AreEqual(false,result)

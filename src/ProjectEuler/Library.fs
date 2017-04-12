@@ -33,4 +33,11 @@ module Library =
         else isPrimeRec (n + 1)
       isPrimeRec 2
 
-    let IsPalindrome x = true
+    let IsPalindrome x =
+      let rec IsPalindromeRec forwards reverse =
+        let digit = forwards % 10
+        let reverse = reverse * 10 + digit
+        let forwards = forwards / 10
+        if forwards > 0 then IsPalindromeRec forwards reverse
+        else x = reverse
+      IsPalindromeRec x 0

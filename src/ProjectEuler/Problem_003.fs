@@ -14,5 +14,5 @@ module Problem_003 =
         [2..root]
         |>List.filter(fun n -> (x % (int64)n = (int64)0) && Math.IsPrime n)
         |>List.max
-    
+
     let Solve x = LargestPrimeFactor x

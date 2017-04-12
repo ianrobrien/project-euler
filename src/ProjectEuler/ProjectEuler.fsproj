@@ -65,6 +65,10 @@
     <Compile Include="Problem_002.fs" />
     <Compile Include="Problem_003.fs" />
     <Compile Include="Problem_004.fs" />
+    <Compile Include="Problem_005.fs" />
+    <Compile Include="Problem_006.fs" />
+    <Compile Include="Problem_007.fs" />
+    <Compile Include="Problem_008.fs" />
     <None Include="Script.fsx" />
     <None Include="paket.references" />
     <None Include="paket.template" />
